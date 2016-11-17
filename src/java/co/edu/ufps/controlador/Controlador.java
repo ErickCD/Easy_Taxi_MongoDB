@@ -18,4 +18,8 @@ public class Controlador {
         myBussines.CrearTaxi(nombre, telefono, placa, empresa, pass);
     }
     
+    public void CrearCliente(String tipoDocumento, String numDocumento, String nombreCliente, String apellido, String direccion, String passUser){
+        myBussines.CrearCliente(tipoDocumento, numDocumento, nombreCliente, apellido, direccion, passUser);
+    }
+    
 }

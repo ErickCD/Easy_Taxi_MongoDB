@@ -40,50 +40,48 @@
         <br>
         <div class="container">
             <div class="row">
-                <form class="col s12" action="" method="Post">
+                <form class="col s12" action="form_Cliente.jsp" method="Post">
                     <!-- Área del código central del código -->
+                    <div class="row">
+                        <div class="col s4 input-field">
+                            <!-- <label>Tipo de documento</label> -->
+                            <select class="browser-default form-control" name="tipoDocumento">
+                                <option value="" disabled selected>Tipo de documento</option>
+                                <option value="Cedula">Cedula</option>
+                                <option value="Cedula de extranjeria">Cedula de extranjería</option>
+                                <option value="Pasaporte">Pasaporte</option>
+                            </select>
+                        </div>
 
-                    <div class="col s4 input-field">
-                        <!-- <label>Tipo de documento</label> -->
-                        <select class="browser-default">
-                            <option value="" disabled selected>Tipo de documento</option>
-                            <option value="1">Cedula</option>
-                            <option value="2">Cedula de extranjería</option>
-                            <option value="3">Pasaporte</option>
-                        </select>
+                        <div class="input-field col s4">
+                            <input name="numDocumento" id="numDocumento" type="text" class="validate form-control">
+                            <label for="numDocumento">Número de documento</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input name="nombreCliente" id="nombreCliente" type="text" class="validate form-control">
+                            <label for="nombreCliente">Nombre<i class="material-icons right">perm_identity</i></label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input name="apellido" id="apellido" type="text" class="validate form-control">
+                            <label for="apellido">Apellido<i class="material-icons right">perm_identity</i></label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input name="direccion" id="direccion" type="text" class="validate form-control">
+                            <label for="direccion">Dirección<i class="material-icons right">navigation</i></label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input name="passUser" id="passUser" type="password" class="validate form-control">
+                            <label for="passUser">Contraseña<i class="material-icons right">vpn_key</i></label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input name="repPassUser" id="repPassUser" type="password" class="validate form-control">
+                            <label for="repPassUser">Repite la contraseña<i class="material-icons right">vpn_key</i></label>
+                        </div>
                     </div>
-
-                    <div class="input-field col s4">
-
-                        <input id="numDocumento" type="text" class="validate">
-                        <label for="numDocumento">Número de documento</label>
-                    </div>
-                    <div class="input-field col s4">
-                        <input id="nombreCliente" type="text" class="validate">
-                        <label for="nombreCliente">Nombre<i class="material-icons right">perm_identity</i></label>
-                    </div>
-                    <div class="input-field col s4">
-                        <input id="apellido" type="text" class="validate">
-                        <label for="apellido">Apellido<i class="material-icons right">perm_identity</i></label>
-                    </div>
-                    <div class="input-field col s4">
-                        <input id="direccion" type="text" class="validate">
-                        <label for="direccion">Dirección<i class="material-icons right">navigation</i></label>
-                    </div>
-                    <div class="input-field col s4">
-                        <input id="passUser" type="password" class="validate">
-                        <label for="passUser">Contraseña<i class="material-icons right">vpn_key</i></label>
-                    </div>
-                    <div class="input-field col s4">
-                        <input id="repPassUser" type="password" class="validate">
-                        <label for="repPassUser">Repite la contraseña<i class="material-icons right">vpn_key</i></label>
-                    </div>
-
                     <!-- Boton de pedido -->
-                    <div class="center">
-                        <a class="btn tooltipped" data-position="bottom" onclick="Materialize.toast('Se ha registrado', 3000, 'rounded')"
-                           data-delay="50" data-tooltip="Regitrar...">Registrarme</a>
-                    </div>
+
+                    <button class="btn btn-lg btn-primary tooltipped" data-position="bottom" onclick="Materialize.toast('Se ha registrado', 3000, 'rounded')"
+                            data-delay="50" data-tooltip="Regitrar..." type="submit">Registrarme</button>
                 </form>
             </div>
         </div>

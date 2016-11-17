@@ -50,7 +50,7 @@
                         </div>
                         <div class="input-field col s4">
                             <i class="material-icons right">phone</i>
-                            <input name="telefono" id="telefono" type="text" class="form-control">
+                            <input name="telefono" id="telefono" type="number" class="form-control">
                             <label for="telefono">Telefono</label>
                         </div>
                         <div class="input-field col s4">

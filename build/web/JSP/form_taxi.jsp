@@ -14,8 +14,7 @@
     String empresa = request.getParameter("empresa");
     String pass = request.getParameter("pass");
 
-    System.out.println("Entro al form con los datos: nombre" + nombre + ", telefono: " + telefono + ", placa: " + placa);
-
+    //System.out.println("Entro al form con los datos: nombre" + nombre + ", telefono: " + telefono + ", placa: " + placa);
     controlador.CrearTaxi(nombre, telefono, placa, empresa, pass);
     session.invalidate();
     session = request.getSession();

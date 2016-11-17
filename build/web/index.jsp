@@ -53,8 +53,8 @@
                         <a href="#!name"><span class="white-text name">Erick Clair</span></a>
                         <a href="#!email"><span class="white-text email">acheron_1405@hotmail.com</span></a>
                     </div></li>
-                    <li><a target="_blank" href="https://github.com/ErickCD/Easy_taxi"><i class="material-icons">cloud</i>Proyecto en Gitub</a></li>
-                    <li><a target="_blank" href="https://www.facebook.com/erickclair.delangeldelangel">Facebook</a></li>
+                <li><a target="_blank" href="https://github.com/ErickCD/Easy_Taxi_MongoDB"><i class="material-icons">cloud</i>Proyecto en Gitub</a></li>
+                <li><a target="_blank" href="https://www.facebook.com/erickclair.delangeldelangel">Facebook</a></li>
                 <li><div class="divider"></div></li>
                 <li><a class="subheader">Universidad</a></li>
                 <li><a target="_blank" class="waves-effect" href="http://www.ufps.edu.co/ufps/index.php">UFPS</a></li>
@@ -115,7 +115,6 @@
                         <h5 class="white-text">Desarrolladores</h5>
                         <ul>
                             <li><a href="mailto:acheron_1405@hotmail.com" class="white-text">acheron_1405@hotmail.com</a></li>
-                            <li><a href="mailto:manuelflorezw@outlook.com" class="white-text">manuelflorezw@outlook.com</a></li>
                         </ul>
                         <img src="img/sistemasufps.png" width="150px" height="150px" alt="UFPS">
                     </div>
