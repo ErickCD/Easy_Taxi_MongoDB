@@ -1,6 +1,6 @@
 <%-- 
-    Document   : taxi
-    Created on : 12/11/2016, 02:11:34 AM
+    Document   : verMisSolicitudes
+    Created on : 12/11/2016, 02:10:12 AM
     Author     : Clair
 --%>
 
@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-        <title>Registrar taxi</title>
+        <title>Ver mis solicitudes</title>
 
         <!-- CSS  -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -38,57 +38,51 @@
         <!-- Navegation end -->
 
         <br>
-        <div class="container">
-            <div class="row">
-                <form class="form-signin col s12" action="form_taxi.jsp" method="Post">
-                    <!-- Área del código central del código -->
-                    <div class="row">
-                        <div class="input-field col s4">
-                            <i class="material-icons right">perm_identity</i>
-                            <input name="nombreConductor" id="nombreConductor" type="text" class="form-control">
-                            <label for="nombreConductor">Nombre</label>
-                        </div>
-                        <div class="input-field col s4">
-                            <i class="material-icons right">phone</i>
-                            <input name="telefono" id="telefono" type="text" class="form-control">
-                            <label for="telefono">Telefono</label>
-                        </div>
-                        <div class="input-field col s4">
-                            <i class="material-icons right">stay_current_landscape</i>
-                            <input name="placa" id="placa" type="text" class="form-control">
-                            <label for="placa">Placa del taxi</label>
-                        </div>
+        <div class="row">
+            <!-- Área del código central del código -->
 
-                        <!--
-                        <div class="input-field col s4">
-                            <i class="material-icons right">stay_primary_portrait</i>
-                            <input id="numeroInterno" type="number" class="validate">
-                            <label for="numeroInterno">Numero interno</label>
-                        </div>
-                        -->
-
-                        <div class="input-field col s4">
-                            <i class="material-icons right">business</i>
-                            <input name="empresa" id="empresa" type="text" class="form-control">
-                            <label for="empresa">Empresa</label>
-                        </div>
-                        <div class="input-field col s4">
-                            <i class="material-icons right">vpn_key</i>
-                            <input name="pass" id="pass" type="password" class="form-control">
-                            <label for="pass">Contraseña</label>
-                        </div>
-                        <div class="input-field col s4">
-                            <i class="material-icons right">vpn_key</i>
-                            <input name="repPass" id="repPass" type="text" class="form-control">
-                            <label for="repPass">Repite la contraseña</label>
-                        </div>
+            <div id="striped" class="section scrollspy">
+                <h2 class="header center">Pedidos pendientes</h2>
+                <div class="row">
+                    <div class="col s12">
+                        <table class="striped">
+                            <thead>
+                                <tr>
+                                    <th data-field="id">Identificador</th>
+                                    <th data-field="name">Fecha</th>
+                                    <th data-field="price">Hora</th>
+                                    <th data-field="price">Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Alvin</td>
+                                    <td>Eclair</td>
+                                    <td>$0.87</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Alan</td>
+                                    <td>Jellybean</td>
+                                    <td>$3.76</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Jonathan</td>
+                                    <td>Lollipop</td>
+                                    <td>$7.00</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Shannon</td>
+                                    <td>KitKat</td>
+                                    <td>$9.99</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <!-- Boton de pedido -->
-
-                    <button class="btn btn-lg btn-primary tooltipped" data-position="bottom" onclick="Materialize.toast('Se ha registrado', 3000, 'rounded')"
-                            data-delay="50" data-tooltip="Regitrar..." type="submit">Registrarme</button>
-
-                </form>
+                </div>
             </div>
         </div>
 

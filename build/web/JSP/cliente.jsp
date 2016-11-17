@@ -1,6 +1,6 @@
 <%-- 
-    Document   : taxi
-    Created on : 12/11/2016, 02:11:34 AM
+    Document   : cliente
+    Created on : 12/11/2016, 02:10:57 AM
     Author     : Clair
 --%>
 
@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-        <title>Registrar taxi</title>
+        <title>Registrar cliente</title>
 
         <!-- CSS  -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -40,54 +40,50 @@
         <br>
         <div class="container">
             <div class="row">
-                <form class="form-signin col s12" action="form_taxi.jsp" method="Post">
+                <form class="col s12" action="" method="Post">
                     <!-- Área del código central del código -->
-                    <div class="row">
-                        <div class="input-field col s4">
-                            <i class="material-icons right">perm_identity</i>
-                            <input name="nombreConductor" id="nombreConductor" type="text" class="form-control">
-                            <label for="nombreConductor">Nombre</label>
-                        </div>
-                        <div class="input-field col s4">
-                            <i class="material-icons right">phone</i>
-                            <input name="telefono" id="telefono" type="text" class="form-control">
-                            <label for="telefono">Telefono</label>
-                        </div>
-                        <div class="input-field col s4">
-                            <i class="material-icons right">stay_current_landscape</i>
-                            <input name="placa" id="placa" type="text" class="form-control">
-                            <label for="placa">Placa del taxi</label>
-                        </div>
 
-                        <!--
-                        <div class="input-field col s4">
-                            <i class="material-icons right">stay_primary_portrait</i>
-                            <input id="numeroInterno" type="number" class="validate">
-                            <label for="numeroInterno">Numero interno</label>
-                        </div>
-                        -->
-
-                        <div class="input-field col s4">
-                            <i class="material-icons right">business</i>
-                            <input name="empresa" id="empresa" type="text" class="form-control">
-                            <label for="empresa">Empresa</label>
-                        </div>
-                        <div class="input-field col s4">
-                            <i class="material-icons right">vpn_key</i>
-                            <input name="pass" id="pass" type="password" class="form-control">
-                            <label for="pass">Contraseña</label>
-                        </div>
-                        <div class="input-field col s4">
-                            <i class="material-icons right">vpn_key</i>
-                            <input name="repPass" id="repPass" type="text" class="form-control">
-                            <label for="repPass">Repite la contraseña</label>
-                        </div>
+                    <div class="col s4 input-field">
+                        <!-- <label>Tipo de documento</label> -->
+                        <select class="browser-default">
+                            <option value="" disabled selected>Tipo de documento</option>
+                            <option value="1">Cedula</option>
+                            <option value="2">Cedula de extranjería</option>
+                            <option value="3">Pasaporte</option>
+                        </select>
                     </div>
+
+                    <div class="input-field col s4">
+
+                        <input id="numDocumento" type="text" class="validate">
+                        <label for="numDocumento">Número de documento</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input id="nombreCliente" type="text" class="validate">
+                        <label for="nombreCliente">Nombre<i class="material-icons right">perm_identity</i></label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input id="apellido" type="text" class="validate">
+                        <label for="apellido">Apellido<i class="material-icons right">perm_identity</i></label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input id="direccion" type="text" class="validate">
+                        <label for="direccion">Dirección<i class="material-icons right">navigation</i></label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input id="passUser" type="password" class="validate">
+                        <label for="passUser">Contraseña<i class="material-icons right">vpn_key</i></label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input id="repPassUser" type="password" class="validate">
+                        <label for="repPassUser">Repite la contraseña<i class="material-icons right">vpn_key</i></label>
+                    </div>
+
                     <!-- Boton de pedido -->
-
-                    <button class="btn btn-lg btn-primary tooltipped" data-position="bottom" onclick="Materialize.toast('Se ha registrado', 3000, 'rounded')"
-                            data-delay="50" data-tooltip="Regitrar..." type="submit">Registrarme</button>
-
+                    <div class="center">
+                        <a class="btn tooltipped" data-position="bottom" onclick="Materialize.toast('Se ha registrado', 3000, 'rounded')"
+                           data-delay="50" data-tooltip="Regitrar...">Registrarme</a>
+                    </div>
                 </form>
             </div>
         </div>

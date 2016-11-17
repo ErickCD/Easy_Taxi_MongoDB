@@ -3,32 +3,31 @@ package co.edu.ufps.connection;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoDatabase;
 
-import org.bson.Document;
-import com.mongodb.Block;
-import com.mongodb.client.FindIterable;
-
-import static com.mongodb.client.model.Filters.*;
-import static com.mongodb.client.model.Sorts.ascending;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import static java.util.Arrays.asList;
-import java.util.Locale;
-
+//import org.bson.Document;
+//import com.mongodb.Block;
+//import com.mongodb.client.FindIterable;
+//
+//import static com.mongodb.client.model.Filters.*;
+//import static com.mongodb.client.model.Sorts.ascending;
+//import java.text.DateFormat;
+//import java.text.ParseException;
+//import java.text.SimpleDateFormat;
+//import static java.util.Arrays.asList;
+//import java.util.Locale;
 /**
  *
  * @author Clair
  */
 public class conexion {
 
-    MongoClient mongoClient;
+    private final MongoClient mongoClient;
 
     public conexion() {
         mongoClient = new MongoClient("localhost", 27017);
     }
 
     public MongoDatabase getClient() {
-        MongoDatabase db = mongoClient.getDatabase("test");
+        MongoDatabase db = mongoClient.getDatabase("easy");
         return db;
     }
 

@@ -1,6 +1,6 @@
 <%-- 
-    Document   : taxi
-    Created on : 12/11/2016, 02:11:34 AM
+    Document   : ingresar
+    Created on : 12/11/2016, 02:08:23 AM
     Author     : Clair
 --%>
 
@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-        <title>Registrar taxi</title>
+        <title>Ingresar</title>
 
         <!-- CSS  -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -38,57 +38,24 @@
         <!-- Navegation end -->
 
         <br>
-        <div class="container">
-            <div class="row">
-                <form class="form-signin col s12" action="form_taxi.jsp" method="Post">
-                    <!-- Área del código central del código -->
-                    <div class="row">
-                        <div class="input-field col s4">
-                            <i class="material-icons right">perm_identity</i>
-                            <input name="nombreConductor" id="nombreConductor" type="text" class="form-control">
-                            <label for="nombreConductor">Nombre</label>
-                        </div>
-                        <div class="input-field col s4">
-                            <i class="material-icons right">phone</i>
-                            <input name="telefono" id="telefono" type="text" class="form-control">
-                            <label for="telefono">Telefono</label>
-                        </div>
-                        <div class="input-field col s4">
-                            <i class="material-icons right">stay_current_landscape</i>
-                            <input name="placa" id="placa" type="text" class="form-control">
-                            <label for="placa">Placa del taxi</label>
-                        </div>
+        <div class="row">
+            <!-- Parte central del código -->
+            <div class="col s12 m4">
 
-                        <!--
-                        <div class="input-field col s4">
-                            <i class="material-icons right">stay_primary_portrait</i>
-                            <input id="numeroInterno" type="number" class="validate">
-                            <label for="numeroInterno">Numero interno</label>
-                        </div>
-                        -->
-
-                        <div class="input-field col s4">
-                            <i class="material-icons right">business</i>
-                            <input name="empresa" id="empresa" type="text" class="form-control">
-                            <label for="empresa">Empresa</label>
-                        </div>
-                        <div class="input-field col s4">
-                            <i class="material-icons right">vpn_key</i>
-                            <input name="pass" id="pass" type="password" class="form-control">
-                            <label for="pass">Contraseña</label>
-                        </div>
-                        <div class="input-field col s4">
-                            <i class="material-icons right">vpn_key</i>
-                            <input name="repPass" id="repPass" type="text" class="form-control">
-                            <label for="repPass">Repite la contraseña</label>
-                        </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title center-align">Ingresar</span>
+                        <hr>
+                        <input name="user" id="usuario" class="form-control" placeholder="Nombre de usuario" required autofocus>
+                        <input name="password" id="pass" type="password" class="form-control" placeholder="Contraseña" required>    
                     </div>
-                    <!-- Boton de pedido -->
-
-                    <button class="btn btn-lg btn-primary tooltipped" data-position="bottom" onclick="Materialize.toast('Se ha registrado', 3000, 'rounded')"
-                            data-delay="50" data-tooltip="Regitrar..." type="submit">Registrarme</button>
-
-                </form>
+                </div>
+                <div class="center">
+                    <a href="verSolicitudes.jsp"><button class="btn btn-lg btn-primary btn-block" type="sumit">Ingresar
+                            <i class="material-icons right">lock_open</i></button></a>
+                </div>
             </div>
         </div>
 
