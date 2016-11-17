@@ -37,38 +37,38 @@
         </nav>
         <!-- Navegation end -->
 
+        <!-- Área del código central del código -->
         <br>
         <div class="container">
             <div class="row">
-                <form class="col s12" action="" method="Post">
-                    <!-- Área del código central del código -->
-                    <div class="input-field col s4">
-                        <label for="fecha">Fecha</label>
-                    </div>
-                    <div class="input-field col s4">
-                        <label for="hora">Hora</label>
-                    </div>
-                    <div class="input-field col s4">
-                        <label for="estado">Estado</label>
-                    </div>
-                    <div class="input-field col s4">
-                        <input id="fecha" type="date" class="validate">
-                        <!-- <label for="fecha">Fecha</label> -->
-                    </div>
-                    <div class="input-field col s4">
-                        <input id="hora" type="time" class="validate">
-                        <!-- <label for="hora">Hora</label> -->
-                    </div>
-                    <div class="input-field col s4">
-                        <input id="estado" type="text" class="validate">
-                        <!-- <label for="estado">Estado</label> -->
-                    </div>
+                <form class="form-signin col s12" action="form_Solicitar_taxi.jsp" method="Post">
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <label for="fecha">Fecha</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <label for="hora">Hora</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <label for="estado">Estado</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input name="fecha" id="fecha" type="date" class="validate form-control">
+                            <!-- <label for="fecha">Fecha</label> -->
+                        </div>
+                        <div class="input-field col s4">
+                            <input name="hora" id="hora" type="time" class="validate form-control">
+                            <!-- <label for="hora">Hora</label> -->
+                        </div>
+                        <div class="input-field col s4">
+                            <input name="estado" id="estado" type="text" class="validate form-control">
+                            <!-- <label for="estado">Estado</label> -->
+                        </div>
 
-                    <!-- Boton de pedido -->
-                    <div class="center">
-                        <a class="btn tooltipped" data-position="bottom" onclick="Materialize.toast('Se ha registrado', 3000, 'rounded')"
-                           data-delay="50" data-tooltip="Regitrar...">Registrarme</a>
                     </div>
+                    <!-- Boton de pedido -->                    
+                    <button class="btn btn-lg btn-primary tooltipped" data-position="bottom" onclick="Materialize.toast('Se ha registrado', 3000, 'rounded')"
+                            data-delay="50" data-tooltip="Regitrar..." type="submit" >Registrarme</button>
                 </form>
             </div>
         </div>

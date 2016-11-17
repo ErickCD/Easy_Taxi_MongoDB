@@ -22,4 +22,7 @@ public class Controlador {
         myBussines.CrearCliente(tipoDocumento, numDocumento, nombreCliente, apellido, direccion, passUser);
     }
     
+    public void CrearPedido(String fecha, String hora, String estado) {
+        myBussines.CrearPedido(fecha, hora, estado);
+    }
 }

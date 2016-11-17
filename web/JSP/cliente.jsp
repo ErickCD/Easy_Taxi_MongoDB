@@ -47,9 +47,9 @@
                             <!-- <label>Tipo de documento</label> -->
                             <select class="browser-default form-control" name="tipoDocumento">
                                 <option value="" disabled selected>Tipo de documento</option>
-                                <option value="Cedula">Cedula</option>
-                                <option value="Cedula de extranjeria">Cedula de extranjería</option>
-                                <option value="Pasaporte">Pasaporte</option>
+                                <option value="1">Cedula</option>
+                                <option value="2">Cedula de extranjería</option>
+                                <option value="3">Pasaporte</option>
                             </select>
                         </div>
 

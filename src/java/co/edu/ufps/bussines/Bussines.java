@@ -6,6 +6,7 @@
 package co.edu.ufps.bussines;
 
 import co.edu.ufps.dao.ClienteDAO;
+import co.edu.ufps.dao.PedidoDAO;
 import co.edu.ufps.dao.TaxiDAO;
 
 /**
@@ -22,6 +23,11 @@ public class Bussines {
     public void CrearCliente(String tipoDocumento, String numDocumento, String nombreCliente, String apellido, String direccion, String passUser) {
         ClienteDAO myClienteDAO = new ClienteDAO();
         myClienteDAO.CrearCliente(tipoDocumento, numDocumento, nombreCliente, apellido, direccion, passUser);
+    }
+
+    public void CrearPedido(String fecha, String hora, String estado) {
+        PedidoDAO myPedidoDAO = new PedidoDAO();
+        myPedidoDAO.CrearPedido(fecha, hora, estado);
     }
 
 }
